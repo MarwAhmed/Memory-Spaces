@@ -1,0 +1,24 @@
+
+//@import '~@angular/material/theming';
+
+// Include the predefined material palettes
+//@include mat-core();
+
+
+// Include the custom theme in your application
+
+$custom-primary: #FF0000; // Red color
+
+// Import Angular Material theming
+
+
+// Include the predefined material palettes
+
+// Create a custom theme by extending the default theme
+$custom-theme: _mat-create-light-color-config(
+                $custom-primary,
+  // ... other theme options
+);
+
+// Include the custom theme in your application
+

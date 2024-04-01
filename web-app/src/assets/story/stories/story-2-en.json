@@ -1,0 +1,26 @@
+{
+  "id": "2",
+  "title": "The Adventure Begins",
+  "description": "Once upon a time, in a land far, far away...",
+  "contains":"",
+  "image": "../assets/story/article-images/",
+  "author":"",
+  "date": "2024-04-01",
+  "topics": [
+    {
+      "title": "Topic 1",
+      "imageUrl": "path/to/topic1-image.jpg",
+      "content": "Content for topic 1..."
+    },
+    {
+      "title": "Topic 2",
+      "imageUrl": "path/to/topic2-image.jpg",
+      "content": "Content for topic 2..."
+    },
+    {
+      "title": "Topic 3",
+      "imageUrl": "path/to/topic3-image.jpg",
+      "content": "Content for topic 3..."
+    }
+  ]
+}

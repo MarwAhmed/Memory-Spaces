@@ -1,0 +1,70 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: burlywood;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-body {
+    margin-top: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-footer button:hover {
+    background-color: #0056b3;
+}
+.main-text {
+    font-family: 'EnglishFont'; /* Default font family */
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px; /* Corrected margin property */
+    background-color: #f0f0f0;
+    direction: ltr; /* Default direction */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+.rtl {
+    direction: rtl; /* Set direction to right-to-left */
+}

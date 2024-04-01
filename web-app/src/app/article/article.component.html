@@ -1,0 +1,19 @@
+<div class="main-text">
+    <div *ngIf="storyData" [ngClass]="{ 'rtl-style': isRtl }">
+        <h2>{{ storyData.title }}</h2>
+        <p>Author: {{ storyData.author }}</p>
+        <p>Date: {{ storyData.date }}</p>
+        <p>{{ storyData.contains }}</p>
+        <div class="topics-container" >
+            <div class="topic" *ngFor="let topic of storyData.topics" [ngClass]="{ 'rtl-style': isRtl }">
+                <div class="topic-content" [ngClass]="{ 'reverse-direction': topic.reverseDirection }" *ngIf="topic.content">
+                    <h2>{{ topic.title }}</h2>
+                    <p>{{ topic.content }}</p>
+                </div>
+                <div class="topic-image-container" *ngIf="topic.imageUrl">
+                    <img [src]="topic.imageUrl" alt="Topic Image" class="topic-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

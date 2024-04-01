@@ -1,0 +1,17 @@
+<div class="map-container" >
+    <div id="map" #map style="height: 800px; margin-top: 20px; margin-right: 10%; margin-left: 10%;"></div>
+    <div class="main-text" style="margin-right: 10%; margin-left: 10%;" [ngClass]="{ 'rtl-style': translationKey === 'ar' }">
+        <div id="info-panel">
+            <div id="city-info">
+                <ng-container *ngIf="selectedPlace">
+                    <h1>{{ selectedPlace?.name  }}</h1>
+                    <p  [innerHTML]="selectedPlace?.description"></p>
+                    <img [src]="selectedPlace.imageUrl" [alt]="" style="max-width: 50%; height: auto">
+                </ng-container>
+                <ng-container *ngIf="!selectedPlace">
+                    <p>No place selected.</p>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>

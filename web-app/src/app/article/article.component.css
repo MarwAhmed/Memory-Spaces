@@ -1,0 +1,49 @@
+.main-text {
+    font-family: 'EnglishFont'; /* Default font family */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px; /* Corrected margin property */
+    background-color: #f0f0f0;
+    direction: ltr; /* Default direction */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.rtl-style{
+    direction: rtl;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column; /* Default direction is column */
+}
+
+.topic {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.topic-content {
+    flex: 1;
+    padding: 10px;
+    /* Adjust the text alignment based on the direction */ /* Default alignment for LTR */
+}
+
+.topic-image-container {
+    flex: 1;
+    padding: 10px;
+    text-align: center; /* Center the image */
+}
+
+.topic-image {
+    max-width: 70%;
+    padding: 10%;/* Ensure the image fits within the container */
+    height: auto;
+}
+
+

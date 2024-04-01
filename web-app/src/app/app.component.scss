@@ -1,0 +1,16 @@
+.language-selector {
+  overflow: hidden;
+}
+
+button {
+  width: 50px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ccc; /* Adjust background color as needed */
+  color: #000; /* Adjust text color as needed */
+}
+::ng-deep .mat-tab-group .mat-tab-labels .mat-tab-label {
+  color: white !important;
+}

@@ -1,0 +1,18 @@
+<div style="display: flex; justify-content: flex-end; color: white; padding: 30px">
+    <mat-slide-toggle (change)="toggleLanguage($event.checked)">
+        <span [ngStyle]="{ 'color': isEnglish ? 'white' : 'white' }">
+            {{ isEnglish ? 'English' : 'عربي' }}
+
+        </span>
+    </mat-slide-toggle>
+</div>
+<br><nav mat-tab-nav-bar style="background-color: burlywood;">
+    <a mat-tab-link class="custom-link" [routerLink]="'/project'">{{ isEnglish ? 'Project' : 'المشروع' | translate | async }}</a>
+    <a mat-tab-link class="custom-link" [routerLink]="'/map'">{{ isEnglish ? 'Map' : 'الخريطة' | translate | async }}</a>
+    <a mat-tab-link class="custom-link" [routerLink]="'/gallery'">{{ isEnglish ? 'Stories' : 'قصص' | translate | async }}</a>
+    <a mat-tab-link class="custom-link" [routerLink]="'/about'">{{ isEnglish ? 'About' : 'حول' | translate | async }}</a>
+</nav>
+
+
+
+<router-outlet></router-outlet>

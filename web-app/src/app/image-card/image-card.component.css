@@ -1,0 +1,74 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    position: relative;
+    width: calc(20% - 10px); /* Adjust the width as needed, considering margins */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    cursor: pointer;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style for the caption */
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px); /* Set width to match the width of the image */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the caption on hover */
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+
+
+
+
+::ng-deep .custom-dialog .mat-dialog-container {
+    max-height: 400px!important;
+    width: 300px !important;
+}
+
+/* Apply styles to the image within the dialog */
+::ng-deep .custom-dialog img {
+    width: auto;
+    max-height: 500px;
+    object-fit: contain; /* Adjust as needed (contain, cover, etc.) */
+}
+
+
+.main-text{
+    font-size: 20px;
+}
+
+.main-text {
+    font-family: 'EnglishFont'; /* Default font family */
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px; /* Corrected margin property */
+    background-color: #f0f0f0;
+    direction: ltr; /* Default direction */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+.main-text-arabic {
+    direction: rtl; /* Right-to-left direction for Arabic */
+    font-family: 'ArabicFont'; /* Font family for Arabic */
+}

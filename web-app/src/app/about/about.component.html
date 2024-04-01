@@ -1,0 +1,14 @@
+<div class="main-text" [ngClass]="{ 'main-text-arabic': getCurrentLanguage() === 'ar' }">
+    <br>
+    <ng-container *ngIf="getCurrentLanguage() === 'en'; else arabicContent">
+    <h2>{{ aboutTitle }}</h2>
+    <br>
+    <p>{{ aboutDescription }}</p>
+    </ng-container>
+
+    <ng-template #arabicContent>
+        <h2>{{ aboutTitle }}</h2>
+        <br>
+        <p>{{ aboutDescription }}</p>
+    </ng-template>
+</div>

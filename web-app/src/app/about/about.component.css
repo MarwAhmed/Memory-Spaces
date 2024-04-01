@@ -1,0 +1,21 @@
+
+.main-text{
+    font-size: 20px;
+}
+
+.main-text {
+    font-family: 'EnglishFont'; /* Default font family */
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px; /* Corrected margin property */
+    background-color: #f0f0f0;
+    direction: ltr; /* Default direction */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+.main-text-arabic {
+    direction: rtl; /* Right-to-left direction for Arabic */
+    font-family: 'ArabicFont'; /* Font family for Arabic */
+}

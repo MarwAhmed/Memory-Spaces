@@ -1,0 +1,23 @@
+{
+  "id": "2",
+  "title": "فحص ٢",
+  "description": "فحص ٢",
+  "contains":"",
+  "author":"",
+  "image": "../assets/story/article-images/",
+  "date": "2024-04-01",
+  "topics": [
+    {
+      "id": 1,
+      "title": "",
+      "imageUrl": "path/to/topic1-image.jpg",
+      "content": "",
+    },
+    {
+      "id": 2,
+      "title": "",
+      "imageUrl": "path/to/topic1-image.jpg",
+      "content":""
+    }
+  ]
+}

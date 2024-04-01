@@ -1,0 +1,34 @@
+<div class="main-text" [ngClass]="{ 'main-text-arabic': getCurrentLanguage() === 'ar' }">
+    <br>
+    MEMORY SPACES
+    <br><br>
+    <ng-container *ngIf="getCurrentLanguage() === 'en'; else arabicContent">
+        {{ getTranslation('introduction') }}
+        <br><br>
+        {{ getTranslation('projectConcept') }}
+        <br>
+        <br>
+        {{ getTranslation('resiProject') }}
+        <br><br>
+        {{ getTranslation('coreMemorySpaces') }}
+
+        <br><br>
+        {{ getTranslation('emphasisOnPreserving') }}
+        <br><br>
+    </ng-container>
+
+    <ng-template #arabicContent>
+        <!-- Add the Arabic translations here -->
+        {{ getTranslation('introduction') }}
+        <br><br>
+        {{ getTranslation('projectConcept') }}
+        <br>
+        <br>
+        {{ getTranslation('resiProject') }}
+        <br><br>
+        {{ getTranslation('coreMemorySpaces') }}
+        <br><br>
+        {{ getTranslation('emphasisOnPreserving') }}
+        <br><br>
+    </ng-template>
+</div>

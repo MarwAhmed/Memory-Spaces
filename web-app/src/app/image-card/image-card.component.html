@@ -1,0 +1,14 @@
+<div class="main-text" [ngClass]="{ 'main-text-arabic': getCurrentLanguage() === 'ar' }">
+<div class="image-gallery">
+    <div *ngFor="let item of images" class="gallery-item" (click)="openImageModal(item.image)">
+        <img [src]="item.image" alt=" " class="gallery-image">
+        <div class="caption">{{ item.text }}</div>
+    </div>
+</div>
+
+<div class="text-content">
+    <br>
+
+    <p *ngFor="let line of mainText">Helloooooo{{ line }}</p>
+</div>
+</div>
